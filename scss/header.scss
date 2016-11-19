@@ -1,0 +1,143 @@
+/**
+* Header Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
+//* Define the variables to be used in this stylesheet
+/**
+***************** A. Header ************************ 
+*/
+.contain-to-grid .top-bar {
+	max-width: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+}
+.logged-in .contain-to-grid .top-bar {
+	margin-top: 30px;
+}
+.top-bar {
+	height: auto;
+	background-color: #FFFFFF;
+	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,.75);
+	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,.75);
+	box-shadow: 0px 4px 5px 0px rgba(0,0,0,.75);
+}
+.title-area {
+	width: 200px;
+	float: left;
+	position: relative;
+}
+.site-title {
+	margin: 0 5px;
+	:link, :visited {
+		font-family: $lato;
+		font-size: 28px;
+		font-weight: $light;
+	}
+}
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+	background-color: #333333;
+	&:hover {
+		background-color: #252525;
+	}
+}
+.tab-bar {
+	background-color: #FFFFFF;
+	.left-small {
+		border-right: 0px;
+	}
+	.menu-icon span::after {
+		box-shadow: 0 0 0 1px #252525, 0 7px 0 1px #252525, 0 14px 0 1px #252525;
+	}
+}
+.tab-bar-section {
+	.title {
+		a {
+			font-family: 'lato', sans-serif;
+			font-weight: 300;
+			color: #252525;
+		}
+	}
+}
+/**
+***************** B. Main Menu ************************ 
+*/
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: transparent;
+}
+.top-bar-section {
+	width: 63%;
+	padding: 0 1%;
+}
+.top-bar-section ul {
+	width: 100%;
+}
+.top-bar-section ul li {
+	background-color: transparent;
+	margin: 0px;
+	a {
+		font-family: $lato;
+		font-weight: 300;
+		color: $off-black;
+		font-size: 18px;
+		padding: 0px 15px !important;
+	}
+}
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+	border: 0px;
+}
+.top-bar-section .has-dropdown > a {
+	padding-right: 15px !important;
+}
+.top-bar-section .has-dropdown > a:after {
+	display: none !important;
+}
+.top-bar-section .right li .dropdown {
+	right: auto;
+	left: 0;
+	font-weight: $lato;
+	a {
+		font-weight: 300;	
+	}
+}
+.top-bar-section .right li .dropdown li .dropdown {
+    left: 100%;
+}
+/**
+***************** C. Social Links ************************ 
+*/
+.social-links {
+    width: 200px;
+    float: right;
+    position: relative;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.social-link {
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    display: inline-block;
+    img {
+     	width: 20px;
+     	height: 20px;
+     	float: left;
+     	position: relative;
+	}
+	.social-link:hover {
+     	opacity: .65;
+	}
+}
+/**
+***************** D. Media Queries ************************ 
+*/
+@media only screen and (max-width: 1271px) {
+	.top-bar-section {
+		width: 63%;
+	}
+}

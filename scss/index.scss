@@ -1,0 +1,152 @@
+/**
+* Index Styles
+*
+* This file contains the styles for both the index and archive templates
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
+//* Define the variables to be used in this stylesheet
+.archive {
+	position: relative;
+	#inner-content {
+		background-color: rgba(255,255,255,.50);
+	}
+	.archive-page-header {
+		width: 1%;
+		height: auto;
+		background-color: #666666;
+		color: #FFFFFF;
+		text-align: center;
+		display: table-cell;
+		padding-top: 20%;
+		padding-bottom: 20%;
+		.archive-page-title {
+			font-family: 'Lato', sans-serif;
+			font-size: 48px;
+			font-weight: 300;
+			color: #FFFFFF;
+			margin-bottom: 20px;
+		}
+	}	
+}
+.home {
+	margin-top: 30px;
+}
+.archive {
+	#main {
+		margin-bottom: 10px;
+		.columns {
+			padding: 0;
+		}
+	}
+	.story {
+		width: 100%;
+		padding-bottom: 50%;
+		height: 0;
+		overflow: hidden;
+		position: relative;
+		background-color: #252525;
+		img {
+			width: 100%;
+			height: auto;
+		}
+		.article-header {
+			display: none;
+			width: 100%;
+			height: auto;
+			background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(26,26,26,1) 70%, rgba(37,37,37,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(26,26,26,1) 70%,rgba(37,37,37,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(26,26,26,1) 70%,rgba(37,37,37,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#252525',GradientType=0 );
+			position: absolute;
+			bottom: 0px;
+			z-index: 99999;
+			.title {
+				color: #FFFFFF;
+				font-family: $lato;
+				font-weight: 300;
+				font-size: 24px;
+				margin-top: 0px;
+			}
+		}
+		&:hover {
+			.article-header {
+				display: block;
+			}
+		}
+		.photo-wrap {
+			display: none;
+			width: 100%;
+			height: 151.5px;
+			background-color: #CCCCCC;
+			img {
+				width: 100% !important;
+				height: auto !important;
+			}
+		}
+	}
+	.author-bio {
+		.mugshot {
+			float: left;
+			position: relative;
+			width: 96px;
+			height: 96px;
+			margin-right: 5px;
+			margin-top: 5px;
+			img {
+				border-radius: 96px;
+			}
+		}
+		.bio {
+			font-family: Lato;
+		    font-size: 14px;
+		    font-weight: 300;
+		}
+	}
+	.pagination {
+		margin-top: 20px;
+		h2 {
+			display: none;
+		}
+		a {
+			border: 2px solid #000000;
+			border-radius: 2px;
+			color: #000000;
+			&:hover {
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+			padding: 3px 5px;
+		}
+		.current {
+			border: 2px solid #000000;
+			border-radius: 2px;
+			color: #FFFFFF;
+			background-color: #000000;
+			&:hover {
+				background-color: #FFFFFF;
+				color: #000000;
+			}
+			font-size: 18px;
+			font-family: 'Lato', sans-serif;
+			font-weight: 300;
+			padding: 3px 5px;
+		}
+	}
+}
+@media #{$small-only} {
+	.archive {
+		.story {
+			.article-header {
+				.title {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}

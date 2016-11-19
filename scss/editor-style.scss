@@ -1,0 +1,17 @@
+/**
+* Editor Styles
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
+@import "wordpress.scss";
+@import "default.scss";
+
+html {
+	padding: 2.5% 2.5%;
+}
+
+p {
+	font-family: 'Cardo', serif;
+	font-size: 18px;
+}
