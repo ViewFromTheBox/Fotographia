@@ -4,7 +4,7 @@
 *
 * @package Fotographia
 * @author  Jacob Martella
-* @version  1.2
+* @version  1.3
 */
 ?>
 <!doctype html>

@@ -3,7 +3,7 @@ Contributors: Jacob Martella
 Tags: two-columns,right-sidebar,custom-header,custom-menu,editor-style,featured-images,theme-options
 Requires at least: 4.0
 Tested up to: 4.6
-Stable tag: 1.2
+Stable tag: 1.3
 
 == Description ==
 Fotographia is the perfect place to house your photo site. Based off Foundation and the JointsWP theme is designed with photo stories and long-form stories in mind. It has great support for large, full-width photos to show off your photos in stunning detail. Fotographia is also responsive, so your readers can take your stories where ever they go with no effort from you.
@@ -51,9 +51,13 @@ Add your own flair to the background of your site with a custom background. The 
 If you have a question, need to report a bug to be fixed or have a feature request for a future version, email me at jacob.martella@att.net or fill out the form on the theme page (http://jacobmartella.com/fotographia-wordpress-theme).
 
 == Changelog ==
+= 1.3 =
+- Changed the format for the date of posts to allow users to chose how the post date is formatted.
+- Tested with WordPress 4.7.
+
 = 1.2 =
 - Added a dark color scheme option
-- Tested with WordPress 4.6
+- Tested with WordPress 4.6.
 
 = 1.1.9 =
 - Changed the format of the homepage. The homepage slider was removed. Titles of posts now only show on hover. The top post section shows five posts now.

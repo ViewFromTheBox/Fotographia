@@ -6,7 +6,7 @@
 *
 * @author Jacob Martella
 * @package Fotographia
-* @version 1.2
+* @version 1.3
 */
 
 //* Create the general settings section
@@ -28,7 +28,7 @@ function fotographia_general_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'fotographia-color-scheme',
 		array(
-			'default' => 'None',
+			'default'           => 'None',
 			'sanitize_callback' => 'fotographia_sanitize_select',
 		)
 	);
@@ -36,10 +36,10 @@ function fotographia_general_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'fotographia-color-scheme',
 		array(
-			'label' => __( 'Color Scheme', 'fotographia' ),
-			'section' => 'general',
-			'type' => 'select',
-			'choices' => $schemes
+			'label'     => __( 'Color Scheme', 'fotographia' ),
+			'section'   => 'general',
+			'type'      => 'select',
+			'choices'   => $schemes
 		)
 	);
 
@@ -54,7 +54,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-home-slider-cat',
         array(
-            'default' => 'None',
+            'default'           => 'None',
             'sanitize_callback' => 'fotographia_sanitize_category',
         )
     );
@@ -62,10 +62,10 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-home-slider-cat',
         array(
-            'label' => __( 'Home Featured Category', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'select',
-            'choices' => $cat_args
+            'label'     => __( 'Home Featured Category', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'select',
+            'choices'   => $cat_args
         )
     );
 
@@ -73,7 +73,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-home-num',
         array(
-            'default' => '10',
+            'default'           => '10',
             'sanitize_callback' => 'fotographia_sanitize_num',
         )
     );
@@ -81,9 +81,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-home-num',
         array(
-            'label' => __( 'Number of Stories on the Homepage.', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'Number of Stories on the Homepage.', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -91,7 +91,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
    		'fotographia-author-bio',
     	array(
-        	'default' => '',
+        	'default'           => '',
         	'sanitize_callback' => 'fotographia_sanitize_checkbox',
     	)
 	);
@@ -99,9 +99,9 @@ function fotographia_general_customizer( $wp_customize ) {
 	$wp_customize->add_control(
     	'fotographia-author-bio',
     	array(
-        	'label' => __( 'Display the Author\'s Bio', 'fotographia' ),
-        	'section' => 'general',
-        	'type' => 'checkbox',
+        	'label'     => __( 'Display the Author\'s Bio', 'fotographia' ),
+        	'section'   => 'general',
+        	'type'      => 'checkbox',
     	)
 	);
 
@@ -109,7 +109,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-facebook',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -117,9 +117,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-facebook',
         array(
-            'label' => __( 'Facebook Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'Facebook Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -127,7 +127,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-twitter',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -135,9 +135,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-twitter',
         array(
-            'label' => __( 'Twitter Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'Twitter Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -145,7 +145,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-google-plus',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -153,9 +153,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-google-plus',
         array(
-            'label' => __( 'Google+ Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'Google+ Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -163,7 +163,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-youtube',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -171,9 +171,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-youtube',
         array(
-            'label' => __( 'YouTube Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'YouTube Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -181,7 +181,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-tumblr',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -189,9 +189,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-tumblr',
         array(
-            'label' => __( 'Tumblr Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'Tumblr Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -199,7 +199,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-instagram',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -207,9 +207,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-instagram',
         array(
-            'label' => __( 'Instagram Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'Instagram Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
 
@@ -217,7 +217,7 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_setting(
         'fotographia-rss-feed',
         array(
-            'default' => '',
+            'default'           => '',
             'sanitize_callback' => 'fotographia_sanitize_link',
         )
     );
@@ -225,9 +225,9 @@ function fotographia_general_customizer( $wp_customize ) {
     $wp_customize->add_control(
         'fotographia-rss-feed',
         array(
-            'label' => __( 'RSS Feed Link', 'fotographia' ),
-            'section' => 'general',
-            'type' => 'text',
+            'label'     => __( 'RSS Feed Link', 'fotographia' ),
+            'section'   => 'general',
+            'type'      => 'text',
         )
     );
     
