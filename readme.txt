@@ -2,7 +2,7 @@
 Contributors: Jacob Martella
 Tags: two-columns,right-sidebar,custom-header,custom-menu,editor-style,featured-images,theme-options
 Requires at least: 4.0
-Tested up to: 4.6
+Tested up to: 4.7
 Stable tag: 1.3
 
 == Description ==
