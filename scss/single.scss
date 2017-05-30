@@ -113,10 +113,8 @@
 		}
 	}
 	blockquote {
-		border-left: 0px;
-		background-image: url('images/quotes.png');
-		background-repeat: no-repeat;
-		background-position: left top;
+		border-left: 0;
+		position: relative;
 		p {
 			font-family: 'Lato', sans-serif;
 			color: #000000;
@@ -129,6 +127,18 @@
 				line-height: 1.6;
 				padding: 0px
 			}
+		}
+		&:before {
+			position: absolute;
+			font-family: 'Playfair Display', serif;
+			font-size: 300px;
+			font-weight: 400;
+			color: #c0c0c0;
+			top: -153px;
+			left: 0;
+			content: "\201C";
+			display: block;
+			opacity: .40;
 		}
 	}
 	.previous-post, .next-post {
