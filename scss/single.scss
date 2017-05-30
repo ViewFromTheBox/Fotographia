@@ -29,9 +29,14 @@
 			background-color: rgba(0,0,0,.30);
 			color: #FFFFFF;
 			text-align: center;
-			display: table-cell;
 			padding-top: 20%;
 			padding-bottom: 20%;
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			display: -webkit-flex;
+			-webkit-justify-content: center;
+			-webkit-flex-direction: column;
 		}
 		.entry-title {
 			font-family: 'Lato', sans-serif;
@@ -43,7 +48,7 @@
 		.entry-meta {
 			font-family: 'Oswald', sans-serif;
 			font-size: 36px;
-			font-size: 400;
+			font-weight: 400;
 			color: #FFFFFF;
 			a {
 				color: #FFFFFF;

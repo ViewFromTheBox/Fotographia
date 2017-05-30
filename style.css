@@ -7302,6 +7302,13 @@ to display none.
 /**
 ***************** B. Theme Defaults ************************ 
 */
+/**
+* Theme Default Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
 html {
   margin-top: 0px;
   padding: 0; }
@@ -7576,6 +7583,19 @@ ul, ol {
 /**
 ***************** C. WordPress Classes ************************ 
 */
+/**
+* WordPress Classes Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
+/*
+* A. By Author
+* B. Sticky
+* C. Photos
+* D. Gallery
+*/
 /*
 A. By Author
 ------------------------------------------- */
@@ -7662,6 +7682,13 @@ D. Gallery
 
 /**
 ***************** II. Header ************************ 
+*/
+/**
+* Header Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
 */
 /**
 ***************** A. Header ************************ 
@@ -7788,7 +7815,14 @@ D. Gallery
 ***************** III. Home ************************ 
 */
 /**
-***************** A. Home Featured Posts ************************
+* Home Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
+/**
+***************** A. Home Slider ************************ 
 */
 .top-posts {
   margin: auto;
@@ -7953,6 +7987,13 @@ D. Gallery
 /**
 ***************** IV. Single ************************ 
 */
+/**
+* Single Post Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
 .single #content #inner-content {
   background-color: #FFFFFF;
   padding-top: 0px;
@@ -7973,9 +8014,14 @@ D. Gallery
     background-color: rgba(0, 0, 0, 0.3);
     color: #FFFFFF;
     text-align: center;
-    display: table-cell;
     padding-top: 20%;
-    padding-bottom: 20%; }
+    padding-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column; }
   .single .featured-photo .entry-title {
     font-family: 'Lato', sans-serif;
     font-size: 48px;
@@ -7985,7 +8031,7 @@ D. Gallery
   .single .featured-photo .entry-meta {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
-    font-size: 400;
+    font-weight: 400;
     color: #FFFFFF; }
     .single .featured-photo .entry-meta a {
       color: #FFFFFF; }
@@ -8124,6 +8170,13 @@ D. Gallery
 /**
 ***************** V. Comments ************************ 
 */
+/**
+* Comments Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
 .comments-title {
   margin-top: 20px; }
 
@@ -8175,6 +8228,15 @@ D. Gallery
 
 /**
 ***************** VI. Index ************************ 
+*/
+/**
+* Index Styles
+*
+* This file contains the styles for both the index and archive templates
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
 */
 .archive {
   position: relative; }
@@ -8290,6 +8352,13 @@ D. Gallery
 /**
 ***************** VIII. Pages ************************ 
 */
+/**
+* Page Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
+*/
 .post-404-header {
   width: 1%;
   height: auto;
@@ -8308,7 +8377,7 @@ D. Gallery
   .post-404-header .post-meta {
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
-    font-size: 400;
+    font-weight: 400;
     color: #FFFFFF; }
     .post-404-header .post-meta a {
       color: #FFFFFF; }
@@ -8347,8 +8416,12 @@ D. Gallery
     background-color: rgba(0, 0, 0, 0.3);
     color: #FFFFFF;
     text-align: center;
-    display: table-cell;
-    padding-top: 20%; }
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-flex-direction: column; }
   .page .featured-photo .page-photo-title {
     font-family: 'Lato', sans-serif;
     font-size: 48px;
@@ -8358,6 +8431,13 @@ D. Gallery
 
 /**
 ***************** IX. Sidebars ************************ 
+*/
+/**
+* Sidebar Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
 */
 /**
 ***************** A. Widgets ************************ 
@@ -8548,6 +8628,13 @@ D. Gallery
     margin-bottom: 20px; } }
 /**
 ***************** X. Footer ************************ 
+*/
+/**
+* Footer Styles
+*
+* @package Fotographia
+* @author Jacob Martella
+* @version 1.2
 */
 .footer {
   background-color: #252525;
