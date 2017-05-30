@@ -2,7 +2,7 @@
 Contributors: Jacob Martella
 Tags: two-columns,right-sidebar,custom-header,custom-menu,editor-style,featured-images,theme-options
 Requires at least: 4.0
-Tested up to: 4.7
+Tested up to: 4.8
 Stable tag: 1.3
 
 == Description ==
@@ -51,6 +51,11 @@ Add your own flair to the background of your site with a custom background. The 
 If you have a question, need to report a bug to be fixed or have a feature request for a future version, email me at jacob.martella@att.net or fill out the form on the theme page (http://jacobmartella.com/fotographia-wordpress-theme).
 
 == Changelog ==
+= 1.4 =
+- Centered the post title and meta data vertically on the single post and page template.
+- Changed the style for blockquotes.
+- Testeed with WordPress 4.8.
+
 = 1.3 =
 - Changed the format for the date of posts to allow users to chose how the post date is formatted.
 - Tested with WordPress 4.7.
