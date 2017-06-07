@@ -4,7 +4,7 @@
 *
 * @package Fotographia
 * @author  Jacob Martella
-* @version  1.3
+* @version  1.4
 */
 ?>
 <div id="sidebar1" class="sidebar large-4 medium-12 columns" role="complementary">
