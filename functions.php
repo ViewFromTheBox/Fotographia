@@ -30,13 +30,13 @@ function fotographia_scripts_and_styles() {
     $theme_version = wp_get_theme()->Version;
 
     // Modernizr from bower_components
-    wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/bower_components/foundation/js/vendor/modernizr.js', array(), '2.8.3', true );
+    //wp_enqueue_script( 'modernizr', get_template_directory_uri() . 'wp-content/themes/fotographia/bower_components/modernizr/modernizr.js', array(), '2.8.3', true );
 
     //* Load What-Input files in footer
     wp_enqueue_script( 'what-input', get_template_directory_uri() . '/vendor/what-input/what-input.min.js', array(), '', true );
 
     //* Adding Foundation scripts file in the footer
-    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/assets/js/foundation.min.js', array( 'jquery' ), '6.0', true );
+    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '6.0', true );
 
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/js/min/scripts.js', array( 'jquery' ), '', true );
@@ -52,19 +52,11 @@ function fotographia_scripts_and_styles() {
     wp_enqueue_style( 'source-sans', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' );
     wp_enqueue_style( 'playfair', '//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' );
 
-    //* Load the scripts for the homepage slider
-    wp_enqueue_script( 'liquid-slider', get_template_directory_uri() . '/js/jquery.liquid-slider.js' );
-    wp_enqueue_script( 'easing', get_template_directory_uri() . '/js/jquery.easing.min.js' );
-	wp_enqueue_script( 'touchSwipe', get_template_directory_uri() . '/js/jquery.touchSwipe.min.js' );
-    wp_enqueue_script( 'fotographia-home-slider', get_template_directory_uri() . '/js/fotographia-home-slider.js' );
-    wp_enqueue_style( 'liquid-slider-css', get_template_directory_uri() . '/css/liquid-slider.css' );
 	wp_enqueue_style( 'editor-style', get_template_directory_uri() . '/css/editor-style.css' );
 
 	// Register main stylesheet
     wp_enqueue_style( 'fotographia-style', get_stylesheet_uri() );
 
-    //* Load the script for the rotating slideshows on archive and home pages
-    wp_enqueue_script( 'fotographia-cycle', get_template_directory_uri() . '/js/fotographia-cycle.js' );
     wp_enqueue_script( 'fotographia-hide-show', get_template_directory_uri() . '/js/fotographia-show-hide.js' );
 
     if ( get_theme_mod( 'fotographia-color-scheme' ) == 'dark' ) {

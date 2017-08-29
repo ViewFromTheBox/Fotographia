@@ -20,11 +20,13 @@
 	margin-top: 30px;
 }
 .top-bar {
-	height: auto;
 	background-color: #FFFFFF;
 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,.75);
 	-moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,.75);
 	box-shadow: 0px 4px 5px 0px rgba(0,0,0,.75);
+	padding-top: 0;
+	padding-bottom: 0;
+	height: auto;
 }
 .title-area {
 	width: 200px;
@@ -39,7 +41,7 @@
 		font-weight: $light;
 	}
 }
-.top-bar-section li.active:not(.has-form) a:not(.button) {
+.top-bar-left li.active:not(.has-form) a:not(.button) {
 	background-color: #333333;
 	&:hover {
 		background-color: #252525;
@@ -66,17 +68,18 @@
 /**
 ***************** B. Main Menu ************************ 
 */
-.top-bar-section li:not(.has-form) a:not(.button) {
+.top-bar-left li:not(.has-form) a:not(.button) {
 	background-color: transparent;
 }
-.top-bar-section {
+.top-bar-left {
 	width: 63%;
 	padding: 0 1%;
 }
-.top-bar-section ul {
+.top-bar-left ul {
 	width: 100%;
+	background-color: transparent;
 }
-.top-bar-section ul li {
+.top-bar-left ul li {
 	background-color: transparent;
 	margin: 0px;
 	a {
@@ -84,19 +87,72 @@
 		font-weight: 300;
 		color: $off-black;
 		font-size: 18px;
-		padding: 0px 15px !important;
+		//padding: 0px 15px !important;
+		&:hover {
+			color: #FFFFFF;
+		}
+	}
+	&:hover {
+		background-color: #252525;
+		a {
+			color: #ffffff;
+		}
+		li {
+			a {
+				color: #252525;
+			}
+			&:hover {
+				background-color: #252525;
+				a {
+					color: #ffffff;
+				}
+				li {
+					a {
+						color: #252525;
+					}
+					&:hover {
+						background-color: #252525;
+						a {
+							color: #ffffff;
+						}
+					}
+					li {
+						a {
+							color: #252525;
+						}
+						&:hover {
+							background-color: #252525;
+							a {
+								color: #ffffff;
+							}
+						}
+						li {
+							a {
+								color: #252525;
+							}
+							&:hover {
+								background-color: #252525;
+								a {
+									color: #ffffff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
-.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+.top-bar-left > ul > .divider, .top-bar-left > ul > [role="separator"] {
 	border: 0px;
 }
-.top-bar-section .has-dropdown > a {
+.top-bar-left .has-submen > a {
 	padding-right: 15px !important;
 }
-.top-bar-section .has-dropdown > a:after {
+.top-bar-left .has-submenu > a:after {
 	display: none !important;
 }
-.top-bar-section .right li .dropdown {
+.top-bar-left li .dropdown {
 	right: auto;
 	left: 0;
 	font-weight: $lato;
@@ -104,7 +160,7 @@
 		font-weight: 300;	
 	}
 }
-.top-bar-section .right li .dropdown li .dropdown {
+.top-bar-left .right li .dropdown li .dropdown {
     left: 100%;
 }
 /**
@@ -137,7 +193,7 @@
 ***************** D. Media Queries ************************ 
 */
 @media only screen and (max-width: 1271px) {
-	.top-bar-section {
+	.top-bar-left {
 		width: 63%;
 	}
 }

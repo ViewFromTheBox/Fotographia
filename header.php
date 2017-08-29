@@ -32,26 +32,21 @@
 							 				<h1 class="site-title"><a href="<?php echo esc_url( get_home_url() ); ?>" style="<?php echo 'color: #' . get_header_textcolor(). ';'; ?>"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a></h1>
 										<?php } ?>
 									</div>
-									<section class="top-bar-section left">
+									<section class="top-bar-left">
 										<?php wp_nav_menu( array(
-									        'container' 		=> false,
-									        'container_class' 	=> '',           		// class of container
-        									'menu' 				=> '',                  // menu name
-									        'menu_class' 		=> 'top-bar-menu right',
-									        'theme_location' 	=> 'main-nav',
-									        'before' 			=> '',                  // before each link <a>
-        									'after' 			=> '',                  // after each link </a>
-        									'link_before' 		=> '',                  // before each link text
-        									'link_after' 		=> '',                  // after each link text
-									        'depth' 			=> 5,
-									        'fallback_cb' 		=> false,
-									        'walker' 			=> new Fotographia_Top_Bar_Walker(),
+                                            'container'	 		=> false,                           	// Remove nav container
+                                            'menu_class' 		=> 'medium-horizontal menu',       		// Adding custom nav class
+                                            'items_wrap' 		=> '<ul id="%1$s" class="%2$s" data-responsive-menu="accordion medium-dropdown">%3$s</ul>',
+                                            'theme_location' 	=> 'main-nav',        					// Where it's located in the theme
+                                            'depth' 			=> 5,                                   // Limit the depth of the nav
+                                            'fallback_cb' 		=> false,                         		// Fallback function (see below)
+									        'walker' 			=> new Fotographia_Topbar_Menu_Walker(),
         								) );?>
 									</section>
 									<?php echo fotographia_social_links(); ?>
 								</nav>
 							</div>
-							<div class="show-for-small-up hide-for-large-up">
+							<div class="hide-for-large show-for-medium-down">
 								<nav class="tab-bar">
 									<section class="middle tab-bar-section">
 										<?php if ( get_header_image() ) { ?>
@@ -65,28 +60,19 @@
 									</section>
 								</nav>
 							</div>
-													
-							<aside class="left-off-canvas-menu show-for-small-up hide-for-large-up">
-								<ul class="off-canvas-list">
-									<li><label><?php _e( 'Navigation', 'fotographia' ); ?></label></li>
-										<?php wp_nav_menu( array(
-									        'container' 		=> false,
-									        'container_class' 	=> '',           		// class of container
-        									'menu' 				=> '',                  // menu name
-									        'menu_class' 		=> 'off-canvas-list',
-									        'theme_location' 	=> 'main-nav',
-									        'before' 			=> '',                  // before each link <a>
-        									'after' 			=> '',                  // after each link </a>
-        									'link_before' 		=> '',                  // before each link text
-        									'link_after' 		=> '',                  // after each link text
-									        'depth' 			=> 5,
-									        'fallback_cb' 		=> false,
-									        'walker' 			=> new Fotographia_Offcanvas_Walker(),
-									    ) ); ?>
-									<li><label><?php _e( 'Social Media Links', 'fotographia' ); ?></label></li>
-										<?php echo wp_kses_post( fotographia_social_links() ); ?>
-								</ul>
-							</aside>
+
+                            <div class="off-canvas position-right" id="off-canvas" data-off-canvas data-position="right">
+                                <?php wp_nav_menu( array(
+                                    'container'         => false,                           // Remove nav container
+                                    'menu_class'        => 'vertical menu',                 // Adding custom nav class
+                                    'items_wrap'        => '<ul id="%1$s" class="%2$s" data-accordion-menu>%3$s</ul>',
+                                    'theme_location'    => 'main-nav',        			    // Where it's located in the theme
+                                    'depth'             => 5,                               // Limit the depth of the nav
+                                    'fallback_cb'       => false,                           // Fallback function (see below)
+                                    'walker'            => new Fotographia_Off_Canvas_Menu_Walker()
+                                ) ); ?>
+                                <?php echo fotographia_social_links(); ?>
+                            </div>
 										
 							<a class="exit-off-canvas"></a>							 	
 													</header> <!-- end .header -->
