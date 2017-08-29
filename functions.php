@@ -29,24 +29,29 @@ function fotographia_scripts_and_styles() {
   if (!is_admin()) {
     $theme_version = wp_get_theme()->Version;
 
-	// Load What-Input files in footer
-	wp_enqueue_script( 'what-input', get_template_directory_uri() . '/vendor/what-input/what-input.min.js', array(), '', true );
-
     // Modernizr from bower_components
     wp_enqueue_script( 'modernizr', get_template_directory_uri() . '/bower_components/foundation/js/vendor/modernizr.js', array(), '2.8.3', true );
-    // Adding Foundation scripts file in the footer
-    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/js/min/foundation.min.js', array( 'jquery' ), '', true );
+
+    //* Load What-Input files in footer
+    wp_enqueue_script( 'what-input', get_template_directory_uri() . '/vendor/what-input/what-input.min.js', array(), '', true );
+
+    //* Adding Foundation scripts file in the footer
+    wp_enqueue_script( 'foundation-js', get_template_directory_uri() . '/assets/js/foundation.min.js', array( 'jquery' ), '6.0', true );
+
     // Adding scripts file in the footer
     wp_enqueue_script( 'site-js', get_template_directory_uri() . '/js/min/scripts.js', array( 'jquery' ), '', true );
+
     // Comment reply script for threaded comments
     if ( is_singular() AND comments_open() AND (get_option('thread_comments') == 1)) {
       wp_enqueue_script( 'comment-reply' );
     }
+
     //* Load the Fonts
     wp_enqueue_style( 'lato', '//fonts.googleapis.com/css?family=Lato:100,300,400,700' );
     wp_enqueue_style( 'oswald', '//fonts.googleapis.com/css?family=Oswald:400,700,300' );
     wp_enqueue_style( 'source-sans', '//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700' );
     wp_enqueue_style( 'playfair', '//fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700' );
+
     //* Load the scripts for the homepage slider
     wp_enqueue_script( 'liquid-slider', get_template_directory_uri() . '/js/jquery.liquid-slider.js' );
     wp_enqueue_script( 'easing', get_template_directory_uri() . '/js/jquery.easing.min.js' );
@@ -54,12 +59,15 @@ function fotographia_scripts_and_styles() {
     wp_enqueue_script( 'fotographia-home-slider', get_template_directory_uri() . '/js/fotographia-home-slider.js' );
     wp_enqueue_style( 'liquid-slider-css', get_template_directory_uri() . '/css/liquid-slider.css' );
 	wp_enqueue_style( 'editor-style', get_template_directory_uri() . '/css/editor-style.css' );
-    // Register main stylesheet
+
+	// Register main stylesheet
     wp_enqueue_style( 'fotographia-style', get_stylesheet_uri() );
+
     //* Load the script for the rotating slideshows on archive and home pages
     wp_enqueue_script( 'fotographia-cycle', get_template_directory_uri() . '/js/fotographia-cycle.js' );
     wp_enqueue_script( 'fotographia-hide-show', get_template_directory_uri() . '/js/fotographia-show-hide.js' );
-	if ( get_theme_mod( 'fotographia-color-scheme' ) == 'dark' ) {
+
+    if ( get_theme_mod( 'fotographia-color-scheme' ) == 'dark' ) {
 	  wp_enqueue_style( 'fotographia-dark-style', get_template_directory_uri() . '/css/dark.css' );
 	}
   }

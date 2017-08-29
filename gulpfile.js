@@ -44,41 +44,42 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('./assets/js/min'))
-});    
+});
 
-// JSHint, concat, and minify JavaScript
 gulp.task('foundation-js', function() {
-  return gulp.src([	
-  		  
-  		  // Foundation core - needed if you want to use any of the components below
-          './bower_components/foundation/js/foundation/foundation.js',
-          
-          // Pick the componenets you need in your project
-          './bower_components/foundation/js/foundation/foundation.abide.js',
-          './bower_components/foundation/js/foundation/foundation.accordion.js',
-          './bower_components/foundation/js/foundation/foundation.alert.js',
-          './bower_components/foundation/js/foundation/foundation.clearing.js',
-          './bower_components/foundation/js/foundation/foundation.dropdown.js',
-          './bower_components/foundation/js/foundation/foundation.equalizer.js',
-          './bower_components/foundation/js/foundation/foundation.interchange.js',
-          './bower_components/foundation/js/foundation/foundation.joyride.js',
-          './bower_components/foundation/js/foundation/foundation.magellan.js',
-          './bower_components/foundation/js/foundation/foundation.offcanvas.js',
-          './bower_components/foundation/js/foundation/foundation.orbit.js',
-          './bower_components/foundation/js/foundation/foundation.reveal.js',
-          './bower_components/foundation/js/foundation/foundation.slider.js',
-          './bower_components/foundation/js/foundation/foundation.tab.js',
-          './bower_components/foundation/js/foundation/foundation.tooltip.js',
-          './bower_components/foundation/js/foundation/foundation.topbar.js',      
-  ])
-    .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'))
-    .pipe(concat('foundation.js'))
-    .pipe(gulp.dest('./assets/js/min'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
-    .pipe(gulp.dest('./assets/js/min'))
-});    
+    return gulp.src([
+
+        // Foundation core - needed if you want to use any of the components below
+        './vendor/foundation-sites/js/foundation.core.js',
+        './vendor/foundation-sites/js/foundation.util.*.js',
+
+        // Pick the components you need in your project
+        './vendor/foundation-sites/js/foundation.abide.js',
+        './vendor/foundation-sites/js/foundation.accordion.js',
+        './vendor/foundation-sites/js/foundation.accordionMenu.js',
+        './vendor/foundation-sites/js/foundation.drilldown.js',
+        './vendor/foundation-sites/js/foundation.dropdown.js',
+        './vendor/foundation-sites/js/foundation.dropdownMenu.js',
+        './vendor/foundation-sites/js/foundation.equalizer.js',
+        './vendor/foundation-sites/js/foundation.interchange.js',
+        './vendor/foundation-sites/js/foundation.magellan.js',
+        './vendor/foundation-sites/js/foundation.offcanvas.js',
+        './vendor/foundation-sites/js/foundation.orbit.js',
+        './vendor/foundation-sites/js/foundation.responsiveMenu.js',
+        './vendor/foundation-sites/js/foundation.responsiveToggle.js',
+        './vendor/foundation-sites/js/foundation.reveal.js',
+        './vendor/foundation-sites/js/foundation.slider.js',
+        './vendor/foundation-sites/js/foundation.sticky.js',
+        './vendor/foundation-sites/js/foundation.tabs.js',
+        './vendor/foundation-sites/js/foundation.toggler.js',
+        './vendor/foundation-sites/js/foundation.tooltip.js',
+    ])
+        .pipe(concat('foundation.js'))
+        .pipe(gulp.dest('./js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('./js'))
+});
 
 // Create a default task 
 gulp.task('default', function() {
