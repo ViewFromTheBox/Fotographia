@@ -6,7 +6,7 @@
 *
 * @author Jacob Martella
 * @package Fotographia
-* @version 1.3
+* @version 1.4
 */
 
 //* Create the general settings section

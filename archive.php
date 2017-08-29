@@ -4,7 +4,7 @@
 *
 * @package Fotographia
 * @author  Jacob Martella
-* @version  1.3
+* @version  1.4
 */
 ?>
 <?php get_header(); ?>		
