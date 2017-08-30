@@ -28,11 +28,18 @@
 	    ?>
 	      <div id="top-post-<?php echo $count; ?>" class="top-post">
 	        <a href="<?php the_permalink(); ?>">
-	          <?php the_post_thumbnail( 'fotographia-home-top' ); ?>
-	          <span class="slide-title-area">
-	            <h3 class="category"><?php $cat = get_the_category(); echo esc_html( $cat[0]->name ); ?></h3>
-	            <h1 class="title"><?php the_title(); ?></h1>
-	          </span>
+                <div class="top-post-front">
+	                <?php the_post_thumbnail( 'fotographia-home-top' ); ?>
+                </div>
+                <div class="top-post-back">
+                    <div class="photo-wrap">
+                        <?php fotographia_story_slideshow( get_the_ID() ); ?>
+                    </div>
+                    <span class="title-area">
+	                    <h5 class="category"><?php $cat = get_the_category(); echo esc_html( $cat[0]->name ); ?></h5>
+	                    <h3 class="title"><?php the_title(); ?></h3>
+	                </span>
+                </div>
 	        </a>
 	      </div>
 	    <?php $count += 1; endwhile; endif; ?>
@@ -57,16 +64,18 @@
 	            <div class="<?php echo esc_attr( $class ); ?>">
 	              <article <?php post_class( array( 'story' ) ); ?>>
 	                  <a href="<?php the_permalink(); ?>">
-	                    <div class="story-wrap">
+                        <div class="story-front">
 	                      <?php the_post_thumbnail( 'fotographia-home' ); ?>
 	                    </div>
-	                    <div class="photo-wrap">
-	                      <?php fotographia_story_slideshow( get_the_ID() ); ?>
-	                    </div>
-	                    <span class="title-area">
-	                      <h5 class="category"><?php $cat = get_the_category(); echo esc_html( $cat[0]->name ); ?></h5>
-	                      <h3 class="title"><?php the_title(); ?></h3>
-	                    </span>
+                        <div class="story-back">
+                            <div class="photo-wrap">
+                              <?php fotographia_story_slideshow( get_the_ID() ); ?>
+                            </div>
+                            <span class="title-area">
+                              <h5 class="category"><?php $cat = get_the_category(); echo esc_html( $cat[0]->name ); ?></h5>
+                              <h3 class="title"><?php the_title(); ?></h3>
+                            </span>
+                        </div>
 	                  </a>
 	              </article>
 	            </div>

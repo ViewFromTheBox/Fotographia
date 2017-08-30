@@ -57,6 +57,7 @@ function fotographia_scripts_and_styles() {
 	// Register main stylesheet
     wp_enqueue_style( 'fotographia-style', get_stylesheet_uri() );
 
+    wp_enqueue_script( 'fotographia-cycle', get_template_directory_uri() . '/js/fotographia-cycle.js' );
     wp_enqueue_script( 'fotographia-hide-show', get_template_directory_uri() . '/js/fotographia-show-hide.js' );
 
     if ( get_theme_mod( 'fotographia-color-scheme' ) == 'dark' ) {

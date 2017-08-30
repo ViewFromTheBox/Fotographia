@@ -24,20 +24,22 @@
 				<?php if ( $count == 1 or $count == 2 ) { ?><div class="row"><?php } ?>
 				<?php if ( $count == 1 ) { $class = 'large-12 medium-12 columns'; } else { $class = 'large-6 medium-6 columns'; } ?>
 				<div class="<?php echo esc_attr( $class ); ?>">
-					<article <?php post_class( array( 'story' ) ); ?>>
-						<a href="<?php the_permalink(); ?>">
-							<div class="story-wrap">
-								<?php the_post_thumbnail( 'fotographia-archive' ); ?>
-							</div>
-							<div class="photo-wrap">
-								<?php wp_kses_post( fotographia_story_slideshow( get_the_ID() ) ); ?>
-							</div>
-					                    <span class="article-header">
-					                      <?php if ( ! is_category() ) { ?><h5 class="category"><?php $cat = get_the_category(); echo esc_html( $cat[0]->name ); ?></h5><?php } ?>
-						                    <h3 class="title"><?php the_title(); ?></h3>
-					                    </span>
-						</a>
-					</article>
+                    <article <?php post_class( array( 'story' ) ); ?>>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="story-front">
+                                <?php the_post_thumbnail( 'fotographia-home' ); ?>
+                            </div>
+                            <div class="story-back">
+                                <div class="photo-wrap">
+                                    <?php fotographia_story_slideshow( get_the_ID() ); ?>
+                                </div>
+                                <span class="title-area">
+                                    <?php if ( ! is_category() ) { ?><h5 class="category"><?php $cat = get_the_category(); echo esc_html( $cat[0]->name ); ?></h5><?php } ?>
+                                    <h3 class="title"><?php the_title(); ?></h3>
+                                </span>
+                            </div>
+                        </a>
+                    </article>
 				</div>
 				<?php if ( $count == 1 or $count == 3 ) { ?></div><?php } ?>
 				<?php $count += 1; if ( $count == 4 ) { $count = 1; } endwhile; if ( $count == 3 ) { ?> </div> <?php } the_posts_pagination(); endif; ?>

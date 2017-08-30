@@ -15,4 +15,9 @@ jQuery(document).ready(function() {
     // Adds Flex Video to YouTube and Vimeo Embeds
     jQuery('iframe[src*="youtube.com"], iframe[src*="vimeo.com"]').wrap("<div class='flex-video'/>");
 
+    jQuery(window).bind("load", function() {
+        var serviceHeight = jQuery('.service-front img').height();
+        jQuery('.service-item').css('height', serviceHeight);
+    });
+
 });
