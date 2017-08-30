@@ -51,6 +51,10 @@ Add your own flair to the background of your site with a custom background. The 
 If you have a question, need to report a bug to be fixed or have a feature request for a future version, email me at jacob.martella@att.net or fill out the form on the theme page (http://jacobmartella.com/fotographia-wordpress-theme).
 
 == Changelog ==
+= 1.5 =
+- Added a flip card effect to posts on the home, archive and index pages when they're hovered over.
+- Update to the latest version of Foundation.
+
 = 1.4 =
 - Centered the post title and meta data vertically on the single post and page template.
 - Changed the style for blockquotes.
