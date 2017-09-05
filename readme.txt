@@ -3,7 +3,7 @@ Contributors: Jacob Martella
 Tags: two-columns,right-sidebar,custom-header,custom-menu,editor-style,featured-images,theme-options
 Requires at least: 4.0
 Tested up to: 4.8
-Stable tag: 1.4
+Stable tag: 1.5
 
 == Description ==
 Fotographia is the perfect place to house your photo site. Based off Foundation and the JointsWP theme is designed with photo stories and long-form stories in mind. It has great support for large, full-width photos to show off your photos in stunning detail. Fotographia is also responsive, so your readers can take your stories where ever they go with no effort from you.

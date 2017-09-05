@@ -5,7 +5,7 @@ Theme URI: https://www.jacobmartella.com/wordpress/wordpress-theme/fotographia-w
 Description: Fotographia is the perfect place to house your photo site. This theme is designed with photo stories and long-form stories in mind. It has great support for large, full-width photos to show off your photos in stunning detail. Fotographia is also responsive, so your readers can take your stories where ever they go with no effort from you.
 Author: Jacob Martella
 Author URI: http://www.jacobmartella.com/
-Version: 1.4
+Version: 1.5
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 Tags: white,light,two-columns,right-sidebar,responsive-layout,custom-header,custom-menu,editor-style,featured-images,theme-options
@@ -4439,13 +4439,6 @@ to display none.
 /**
 ***************** B. Theme Defaults ************************ 
 */
-/**
-* Theme Default Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
-*/
 html {
   margin-top: 0px;
   padding: 0; }
@@ -4720,19 +4713,6 @@ ul, ol {
 /**
 ***************** C. WordPress Classes ************************ 
 */
-/**
-* WordPress Classes Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
-*/
-/*
-* A. By Author
-* B. Sticky
-* C. Photos
-* D. Gallery
-*/
 /*
 A. By Author
 ------------------------------------------- */
@@ -4819,13 +4799,6 @@ D. Gallery
 
 /**
 ***************** II. Header ************************ 
-*/
-/**
-* Header Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
 */
 /**
 ***************** A. Header ************************ 
@@ -4982,13 +4955,6 @@ D. Gallery
     width: 63%; } }
 /**
 ***************** III. Home ************************ 
-*/
-/**
-* Home Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
 */
 /**
 ***************** A. Home Slider ************************ 
@@ -5217,13 +5183,6 @@ D. Gallery
 /**
 ***************** IV. Single ************************ 
 */
-/**
-* Single Post Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
-*/
 .single #content #inner-content {
   background-color: #FFFFFF;
   padding-top: 0px;
@@ -5409,13 +5368,6 @@ D. Gallery
 /**
 ***************** V. Comments ************************ 
 */
-/**
-* Comments Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
-*/
 .comments-title {
   margin-top: 20px; }
 
@@ -5467,15 +5419,6 @@ D. Gallery
 
 /**
 ***************** VI. Index ************************ 
-*/
-/**
-* Index Styles
-*
-* This file contains the styles for both the index and archive templates
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
 */
 .archive {
   position: relative; }
@@ -5624,13 +5567,6 @@ D. Gallery
 /**
 ***************** VIII. Pages ************************ 
 */
-/**
-* Page Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
-*/
 .post-404-header {
   width: 1%;
   height: auto;
@@ -5703,13 +5639,6 @@ D. Gallery
 
 /**
 ***************** IX. Sidebars ************************ 
-*/
-/**
-* Sidebar Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
 */
 /**
 ***************** A. Widgets ************************ 
@@ -5904,13 +5833,6 @@ D. Gallery
     margin-bottom: 20px; } }
 /**
 ***************** X. Footer ************************ 
-*/
-/**
-* Footer Styles
-*
-* @package Fotographia
-* @author Jacob Martella
-* @version 1.4
 */
 .footer {
   background-color: #252525;

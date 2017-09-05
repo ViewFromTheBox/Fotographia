@@ -4,7 +4,7 @@
 *
 * @package Fotographia
 * @author  Jacob Martella
-* @version  1.4
+* @version  1.5
 */
 /**
 * To change the archive pages, edit the archives.php template. 

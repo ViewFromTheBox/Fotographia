@@ -5,7 +5,7 @@ Theme URI: https://www.jacobmartella.com/wordpress/wordpress-theme/fotographia-w
 Description: Fotographia is the perfect place to house your photo site. This theme is designed with photo stories and long-form stories in mind. It has great support for large, full-width photos to show off your photos in stunning detail. Fotographia is also responsive, so your readers can take your stories where ever they go with no effort from you.
 Author: Jacob Martella
 Author URI: http://www.jacobmartella.com/
-Version: 1.4
+Version: 1.5
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-2.0.html 
 Tags: white,light,two-columns,right-sidebar,responsive-layout,custom-header,custom-menu,editor-style,featured-images,theme-options
@@ -4444,7 +4444,7 @@ to display none.
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 html {
   margin-top: 0px;
@@ -4725,7 +4725,7 @@ ul, ol {
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 /*
 * A. By Author
@@ -4825,7 +4825,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 /**
 ***************** A. Header ************************ 
@@ -4988,7 +4988,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 /**
 ***************** A. Home Slider ************************ 
@@ -5222,7 +5222,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 .single #content #inner-content {
   background-color: #FFFFFF;
@@ -5414,7 +5414,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 .comments-title {
   margin-top: 20px; }
@@ -5475,7 +5475,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 .archive {
   position: relative; }
@@ -5629,7 +5629,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 .post-404-header {
   width: 1%;
@@ -5709,7 +5709,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 /**
 ***************** A. Widgets ************************ 
@@ -5910,7 +5910,7 @@ D. Gallery
 *
 * @package Fotographia
 * @author Jacob Martella
-* @version 1.4
+* @version 1.5
 */
 .footer {
   background-color: #252525;

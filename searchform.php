@@ -4,7 +4,7 @@
 *
 * @package Fotographia
 * @author  Jacob Martella
-* @version  1.4
+* @version  1.5
 */
 ?>
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
