@@ -10,19 +10,14 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <div class="site-info">
-	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'wp-rig' ) ); ?>">
-		<?php
-		/* translators: %s: CMS name, i.e. WordPress. */
-		printf( esc_html__( 'Proudly powered by %s', 'wp-rig' ), 'WordPress' );
-		?>
-	</a>
+	<p>
+	&copy; <?php echo esc_html( date( 'Y' ) ); ?> <a href="<?php echo esc_url( home_url() ); ?>"><?php esc_html( bloginfo( 'name' ) ); ?></a>
 	<span class="sep"> | </span>
+	<a href="<?php echo esc_url( 'http://www.jacobmartella.com/wordpress/wordpress-theme/fotographia-wordpress-theme' ); ?>"><?php esc_html_e( 'Fotographia', 'wp-rig' ); ?></a>
 	<?php
-	/* translators: Theme name. */
-	printf( esc_html__( 'Theme: %s by the contributors.', 'wp-rig' ), '<a href="' . esc_url( 'https://github.com/wprig/wprig/' ) . '">WP Rig</a>' );
-
 	if ( function_exists( 'the_privacy_policy_link' ) ) {
 		the_privacy_policy_link( '<span class="sep"> | </span>' );
 	}
 	?>
+	</p>
 </div><!-- .site-info -->

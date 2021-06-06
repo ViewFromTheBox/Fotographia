@@ -46,3 +46,6 @@
 !screenshot.png
 !.travis.yml
 !.browserslistrc
+
+/node_modules/
+/vendor/

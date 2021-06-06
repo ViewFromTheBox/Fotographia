@@ -42,7 +42,7 @@ class Component implements Component_Interface {
 			apply_filters(
 				'wp_rig_custom_background_args',
 				array(
-					'default-color' => 'ffffff',
+					'default-color' => '999999',
 					'default-image' => '',
 				)
 			)

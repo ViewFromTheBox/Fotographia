@@ -23,6 +23,7 @@ html {
 /* stylelint-disable */
 body {
 	background: #fff;
+	position: relative;
 	/* Fallback for when there is no custom background color defined. */
 }
 /* stylelint-enable */

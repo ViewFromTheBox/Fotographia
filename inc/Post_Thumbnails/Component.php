@@ -47,6 +47,9 @@ class Component implements Component_Interface {
 	 * Adds custom image sizes.
 	 */
 	public function action_add_image_sizes() {
-		add_image_size( 'wp-rig-featured', 720, 480, true );
+		add_image_size( 'fotographia-home-top', 4000, 3000, true );
+		add_image_size( 'fotographia-home', 2000, 1500, true );
+		add_image_size( 'fotographia-archive', 2000, 1500, true );
+		add_image_size( 'fotographia-single', 5000, 3333, true );
 	}
 }
