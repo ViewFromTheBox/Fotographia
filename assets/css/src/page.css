@@ -3,7 +3,8 @@
 
 @media (--small-up) {
 
-	.page {
+	.page,
+	.error404 {
 
 		& .featured-photo {
 			width: 100%;
@@ -107,6 +108,21 @@
 					margin: 0 auto;
 				}
 
+				& .use-search-bar {
+
+					& .search-form {
+						margin-top: 3rem;
+					}
+
+					& .search-field {
+						width: 70%;
+					}
+
+					& .search-submit {
+						width: 25%;
+					}
+				}
+
 				& p {
 
 					&:first-child::first-letter {
@@ -174,7 +190,8 @@
 
 @media (--medium-down) {
 
-	.page {
+	.page,
+	.error404 {
 
 		& .featured-photo {
 
@@ -191,7 +208,8 @@
 
 @media (--small-down) {
 
-	.page {
+	.page,
+	.error404 {
 
 		& .featured-photo {
 
@@ -223,6 +241,21 @@
 
 		& .main-content {
 			padding: 0 1rem;
+
+			& .entry-content {
+
+				& .use-search-bar {
+
+					& .search-field {
+						width: 100%;
+						margin-bottom: 1rem;
+					}
+
+					& .search-submit {
+						width: 100%;
+					}
+				}
+			}
 
 			& .post-navigation-container {
 				display: flex;
